@@ -12,9 +12,9 @@
   border-radius: 355.878px;
   transform: rotate(90deg);
 }
-.rect{
-  background-image: url("./assets/rectangle.png");
+/* .rect{
+  background-image: url("./assets/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   
-}
+} */

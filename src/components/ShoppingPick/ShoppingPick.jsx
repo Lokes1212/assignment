@@ -13,7 +13,7 @@ const Button = ({ text }) => {
 };
 const ShoppingPick = () => {
 	return (
-		<section className=" px-4 lg:px-24  bg-white">
+		<section className="px-4 lg:pb-10 lg:px-24  bg-white">
 			<h1 className="text-center font-bold lg:text-4xl text-xl lg:py-10 py-6">
 				How can Shop Easy help you?
 			</h1>

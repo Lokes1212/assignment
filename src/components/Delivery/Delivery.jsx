@@ -3,10 +3,10 @@
 const Delivery = ({ title, data, img, bgColor, msImg, mobileBg }) => {
 	return (
 		<section
-			className={` py-6 lg:py-10 lg:pb-20 px-4 lg:px-24  ${mobileBg} lg:bg-[${bgColor}]`}
+			className={` py-6  lg:pb-20 lg:py-10 px-4 lg:px-24  ${mobileBg} lg:bg-[${bgColor}]`}
 		>
 			<div>
-				<h1 className="text-2xl text-center lg:text-left pb-6 lg:text-4xl font-semibold lg:pb-14 lg:w-1/2">
+				<h1 className="text-2xl text-center lg:text-left pb-6 lg:text-4xl font-semibold  lg:pb-14 lg:w-1/2">
 					{title}
 				</h1>
 

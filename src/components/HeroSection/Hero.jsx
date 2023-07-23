@@ -1,55 +1,32 @@
-import heroImage from "../../assets/hero-img.png";
+import heroImage from "../../assets/hero-bg.png";
 const Hero = () => {
 	return (
-		<section className="bg-radial w-full -z-10">
-			<div className="flex justify-between px-24 items-center text-white border border-white h-[700px]">
-				<div>
-					<h1 className="text-5xl font-bold py-1">Shop Easy</h1>
-					<h2 className="text-4xl font-semibold py-1">
-						Simplify Your Shopping Experience
-					</h2>
-					<p className="text-base py-1 font-normal w-3/4">
-						Discover a vast selection of groceries, furniture, electronics, and
-						more, all in one convenient app. No matter what success looks like
-						for you, you can do it with Shop Easy.
-					</p>
-					<div className="pt-10">
-						<button className="bg-white text-black rounded-xl px-6 py-2 text-base font-medium ">
-							Try it free
-						</button>
-					</div>
+		<section className="rect w-full h-full relative">
+			<img
+				src={heroImage}
+				alt=""
+				className="relative w-full h-full "
+			/>
+			<div className="absolute top-0 py-5 md:py-20 lg:py-32 pl-4  text-white w-[390px] md:w-full ">
+				<h1 className="text-[12px] sm:text-base md:text-5xl font-bold py-[2px]">
+					Shop Easy
+				</h1>
+				<h2 className="text-[10px] sm:text-base md:text-4xl font-semibold py-[5px]">
+					Simplify Your Shopping Experience
+				</h2>
+				<p className="text-[8px] sm:text-base md:text-base md:py-1 font-normal w-1/2 opacity-90">
+					Discover a vast selection of groceries, furniture, electronics, and
+					more, all in one convenient app. No matter what success looks like for
+					you, you can do it with Shop Easy.
+				</p>
+				<div className="pt-3 md:pt-10">
+					<button className="bg-white text-black rounded-xl text-[10px] px-4 py-1 md:px-6 md:py-2  md:text-base font-medium ">
+						Try it free
+					</button>
 				</div>
-				<div className="rect  border ">
-					<div className=" w-full">
-						<img
-							src={heroImage}
-							alt=""
-							className=" -ml-32"
-						/>
-					</div>
-				</div>
-				{/* <div className="bg-rectangle rect-radius self-end relative">
-					<div>
-						<img
-							src={heroImage}
-							alt=""
-							className="-rotate-90 "
-						/>
-					</div> */}
-				{/* <div className="bg-rectangle w-[400px] rect-radius object-contain">
-						
-					</div> */}
-				{/* </div> */}
 			</div>
 		</section>
 	);
 };
-{
-	/* <div className="absolute top-[68px] left-[905px] rounded-[355.88px] [background:linear-gradient(179.98deg,_#e98a15,_#0e4657)] w-[459.08px] h-[737.85px]"></div>
-				<img
-					src={heroImage}
-					className="absolute top-[64px] left-[578px] w-[1013px] h-[675.72px] object-cover"
-					alt=""
-				/> */
-}
+
 export default Hero;

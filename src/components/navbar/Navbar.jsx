@@ -1,3 +1,4 @@
+import { AiOutlineSearch } from "react-icons/ai";
 const Navbar = () => {
 	return (
 		<nav className="py-4 px-24 bg-white">
@@ -15,7 +16,9 @@ const Navbar = () => {
 					<li className="text-black opacity-80 text-lg">Policy</li>
 				</ul>
 				<div className="flex items-center gap-4">
-					<span>search</span>
+					<span>
+						<AiOutlineSearch />
+					</span>
 					<button className="text-xl font-normal text-black opacity-80">
 						Login
 					</button>
