@@ -52,7 +52,7 @@ const ShoppingPick = () => {
 					</p>
 
 					<Button text="Start Shopping" />
-					<div className="flex justify-between pt-10 gap-10">
+					<div className="flex justify-center pt-10 gap-10">
 						<img
 							src={shoppingImg3}
 							alt=""
