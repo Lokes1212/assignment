@@ -40,7 +40,7 @@ const Faq = (props) => {
 const Faqs = () => {
 	const [list, setList] = useState([
 		{
-			question: "How can I create an account on Shop Easy?",
+			question: "How can I create an account on First Store?",
 			answer:
 				"To create an account on Shop Easy, visit the website and fill out the registration form with your name, email, and password. Agree to the terms and click 'Create Account' to complete the process.",
 			active: 1,
@@ -50,7 +50,8 @@ const Faqs = () => {
 			answer: "",
 		},
 		{
-			question: "Are there any discounts or promotions available on Shop Easy?",
+			question:
+				"Are there any discounts or promotions available on First Store?",
 			answer: "",
 		},
 		{

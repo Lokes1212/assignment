@@ -4,7 +4,7 @@ const Hero = () => {
 			<div className="flex justify-between items-center h-full px-6 lg:px-24 pt-10 text-white">
 				<div className="w-[50%] lg:w-[60%] pb-4">
 					<h1 className="text-[24px]  md:text-5xl font-bold py-[2px]">
-						Shop Easy
+						Firststore.io
 					</h1>
 
 					<h2 className="text-[16px]  md:text-4xl font-semibold py-[5px]">
