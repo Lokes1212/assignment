@@ -33,7 +33,7 @@ const Navbar = () => {
 						<AiOutlineSearch className="text-2xl" />
 					</span>
 					<button className="text-xl font-medium text-black opacity-80 font-inter">
-						<Link to="">Login</Link>
+						<Link to="/login">Login</Link>
 					</button>
 					<button className="bg-[#2F9A5A] font-medium text-white text-sm px-2 py-2 rounded-xl font-raleway">
 						Get started
