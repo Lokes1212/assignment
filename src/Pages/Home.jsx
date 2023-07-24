@@ -14,7 +14,7 @@ import Footer from "../components/Footer/Footer";
 
 const Home = () => {
 	return (
-		<>
+		<main className="overflow-x-hidden">
 			<Navbar />
 			<Hero />
 			<ShoppingPick />
@@ -24,20 +24,19 @@ const Home = () => {
 				img={shoppingImg}
 				bgColor={"#FFFFFF"}
 				msImg={msShoppingImg}
-				mobileBg={"bg-[#FFF5F5]"}
 			/>
 			<Delivery
 				title={"Save on shipping, in-store pickup, and delivery."}
 				data={shippingData}
 				img={shippingImg}
 				msImg={msShippingImg}
-				bgColor={"bg-[#F2F2F2]"}
+				bgColor={"#F2F2F2"}
 			/>
 			<Payments />
 			<PricingPlans />
 			<Faqs />
 			<Footer />
-		</>
+		</main>
 	);
 };
 

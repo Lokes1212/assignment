@@ -3,10 +3,10 @@ const PricingCard = ({ title, description, price, btnText, featuresList }) => {
 	// console.log(featuresList);
 	return (
 		<div className="p-4 bg-[#AEBEBE] text-black rounded-xl">
-			<h3 className="font-semibold text-4xl">{title}</h3>
-			<p className="py-2 font-normal text-lg">{description}</p>
+			<h3 className="font-semibold text-4xl font-inter">{title}</h3>
+			<p className="py-2 font-normal text-lg font-inter">{description}</p>
 			<div className="pt-10 ">
-				<p className="text-lg ">
+				<p className="text-lg font-inter ">
 					Starting at{" "}
 					<span className="text-[#39634A] text-2xl font-bold">₹{price}</span>{" "}
 					<br /> per month for first 3 months
@@ -19,8 +19,8 @@ const PricingCard = ({ title, description, price, btnText, featuresList }) => {
 			</div>
 			<span className="w-full h-[2px] bg-white absolute left-0"></span>
 			<div className="pt-10 pb-12">
-				<h5 className="font-semibold text-2xl">FEATURES</h5>
-				<ul className="list-disc pl-8 py-3 font-normal text-xl">
+				<h5 className="font-semibold text-2xl font-inter">FEATURES</h5>
+				<ul className="list-disc pl-8 py-3 font-normal text-xl font-inter">
 					{featuresList.map((item) => (
 						<li key={item.id}>{item.title}</li>
 					))}

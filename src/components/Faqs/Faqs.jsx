@@ -10,7 +10,7 @@ const Faq = (props) => {
 	return (
 		<div
 			className={`p-5 bg-[#E9E8E8]  rounded-lg mb-5 duration-500 group ${
-				data.active === 1 ? "is-active bg-white" : ""
+				data.active === 1 ? "is-active " : ""
 			}`}
 		>
 			<div className="flex items-center">
@@ -47,15 +47,15 @@ const Faqs = () => {
 		},
 		{
 			question: "What payment methods are accepted for online orders?",
-			answer: "I'm FullStack Deveoper",
+			answer: "",
 		},
 		{
 			question: "Are there any discounts or promotions available on Shop Easy?",
-			answer: "I'm FullStack Deveoper",
+			answer: "",
 		},
 		{
 			question: "How long does it take to process and deliver an online order?",
-			answer: "I'm FullStack Deveoper",
+			answer: "",
 		},
 	]);
 	return (

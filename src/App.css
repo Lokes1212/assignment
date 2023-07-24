@@ -1,20 +1,16 @@
 
 .bg-radial{
-  /* background: radial-gradient(560.49% 100.07% at 100.00% 50.06%, #0C113C 6.45%, #010303 28.13%, #181F5E 44.89%, #061C28 67.99%, #061F2C 100%); */
   background: radial-gradient(100% 560.48% at 100% 50.06%, #0C113C 6.45%, #010303 28.13%, #181F5E 44.89%, #061C28 67.99%, #061F2C 100%)
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
 }
 .bg-rectangle{
   background: linear-gradient(179.98deg, #E98A15 0.02%, #0E4657 99.98%);
-}
-.rect-radius{
-  border-radius: 355.878px;
-  transform: rotate(90deg);
-}
-/* .rect{
-  background-image: url("./assets/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   
-} */
+}
+
+.rect{
+  background-image: url("./assets/basket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}

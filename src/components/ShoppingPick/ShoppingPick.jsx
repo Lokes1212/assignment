@@ -13,16 +13,16 @@ const Button = ({ text }) => {
 };
 const ShoppingPick = () => {
 	return (
-		<section className="px-4 lg:pb-10 lg:px-24  bg-white">
-			<h1 className="text-center font-bold lg:text-4xl text-xl lg:py-10 py-6">
+		<section className="px-4 lg:pb-20 lg:px-24  bg-white">
+			<h1 className="text-center font-semibold lg:text-5xl text-xl lg:py-14 py-6 font-fira opacity-80">
 				How can Shop Easy help you?
 			</h1>
-			<div className="flex flex-col  md:flex-row md:justify-between gap-14">
-				<div className="bg-[#F0EBEB] pt-10 px-6 pb-4 w-max-[500px] w-full ">
-					<h3 className="font-medium text-3xl text-center pb-3">
+			<div className="flex flex-col  md:flex-row md:justify-between gap-14 pt-4">
+				<div className="bg-[#F0EBEB] pt-10 px-6 pb-4 w-max-[500px] w-full max-h-[700px] h-full max-w-[500px] ">
+					<h3 className="font-medium text-3xl text-center pb-3 font-inter">
 						Want to pick up from store
 					</h3>
-					<p className="font-normal text-lg text-center">
+					<p className="font-normal text-lg text-center font-inter opacity-75">
 						Shop Easy makes it simple to Seamless order Pickup experience at
 						Your convenience.
 					</p>
@@ -43,19 +43,20 @@ const ShoppingPick = () => {
 					</div>
 				</div>
 
-				<div className="bg-[#F1F2FF] pt-10 px-6 pb-4 w-max-[500px] w-full ">
-					<h3 className="font-medium text-3xl text-center pb-3">
+				<div className="bg-[#F1F2FF] pt-10 px-6 pb-4  w-full   max-w-[500px]">
+					<h3 className="font-medium text-3xl text-center pb-3 font-inter">
 						Want to shop online
 					</h3>
-					<p className="font-normal text-lg text-center">
+					<p className="font-normal text-lg text-center opacity-75 font-inter">
 						With Shop Easy explore and shop from the comfort of your home.
 					</p>
 
 					<Button text="Start Shopping" />
-					<div className="flex justify-center pt-10 gap-10">
+					<div className="flex justify-center pt-10 gap-10 ">
 						<img
 							src={shoppingImg3}
 							alt=""
+							className="self-end"
 						/>
 					</div>
 				</div>

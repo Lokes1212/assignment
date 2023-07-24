@@ -10,8 +10,10 @@ const Card = ({ description, image, title }) => {
 					alt=""
 				/>
 			</div>
-			<h4 className="font-bold lg:font-semibold text-xl pt-6">{title}</h4>
-			<p className="font-normal text-base w-[90%] text-black opacity-75 py-2">
+			<h4 className="font-bold lg:font-semibold text-xl pt-6 font-inter">
+				{title}
+			</h4>
+			<p className="font-normal text-base w-[90%] 2xl:w-[70%] text-black opacity-75 py-2 font-inter">
 				{description}
 			</p>
 		</div>
@@ -20,7 +22,7 @@ const Card = ({ description, image, title }) => {
 const Payments = () => {
 	return (
 		<section className="py-4 lg:py-10  lg:pb-20 px-4 lg:px-24 bg-[#F2F7FC]">
-			<h1 className="text-center lg:text-left text-md lg:text-4xl font-bold lg:font-semibold pb-4 lg:pb-14 lg:w-1/2">
+			<h1 className="text-center lg:text-left text-md lg:text-4xl font-bold lg:font-semibold pb-4 lg:pb-14 lg:w-1/2 font-fira opacity-80">
 				So many ways to pay
 			</h1>
 			<div className="flex flex-col lg:flex-row gap-10 justify-between ">

@@ -10,13 +10,13 @@ import {
 const PricingPlans = () => {
 	return (
 		<section className="py-10  px-4 lg:px-24 bg-white">
-			<h1 className="lg:text-4xl text-md font-bold lg:font-semibold  lg:w-1/2">
+			<h1 className="lg:text-4xl text-md font-bold lg:font-semibold  lg:w-2/5 font-fira">
 				Start for free, upgrade at any time.
 			</h1>
-			<p className="py-2 lg:py-4 font-normal text-lg  text-black opacity-75 lg:w-[42%]">
+			<p className="py-2 lg:py-4 font-normal text-lg  text-black opacity-75 lg:w-[42%] font-inter">
 				{"All paid plans come with a free custom domain—that's a $30 value."}
 			</p>
-			<div className="flex flex-col lg:flex-row gap-5  justify-between w-full ">
+			<div className="flex flex-col lg:flex-row gap-5  justify-between w-full py-4">
 				<PlanCard
 					title={"Free plan"}
 					description={"Includes every feature you need to start"}
@@ -36,7 +36,7 @@ const PricingPlans = () => {
 					btnColor={"text-[#3C4FFF]"}
 				/>
 			</div>
-			<h2 className="text-center  text-black opacity-80 text-[13px] lg:text-2xl font-bold  lg:font-semibold lg:w-9/12 mx-auto pt-6 lg:pt-14 lg:py-14">
+			<h2 className="text-center font-fira  text-black opacity-80 text-[13px] lg:text-2xl font-bold  lg:font-semibold lg:w-9/12 mx-auto pt-6 lg:pt-14 lg:py-14">
 				Unlock premium marketing tools at the most affordable rates to
 				supercharge your marketing efforts.
 			</h2>
