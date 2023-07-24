@@ -10,7 +10,7 @@ const Footer = () => {
 				<div className="flex  justify-between  lg:flex-row flex-wrap gap-10">
 					<div className="flex flex-row lg:flex-col justify-between w-full sm:w-auto  gap-5">
 						<div className="flex flex-col gap-5 justify-around w-full">
-							<h3 className="font-semibold text-xl">SHOP EASY</h3>
+							<h3 className="font-semibold text-xl">FIRSTSTORE.io</h3>
 							<p className=" font-normal text-base text-justify lg:max-w-[200px]  w-full">
 								Shop Easy is your one-stop destination for all your grocery
 								shopping needs. We offer a wide range of high-quality products,

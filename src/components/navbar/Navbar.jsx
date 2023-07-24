@@ -13,7 +13,7 @@ const Navbar = () => {
 			<div className=" items-center justify-between hidden lg:flex">
 				<ul className="flex items-center gap-5">
 					<li className="text-2xl text-[#3F787B] font-medium pr-10 font-inter">
-						<Link to={"/"}>Shop Easy</Link>
+						<Link to={"/"}>Firststore.io</Link>
 					</li>
 					<li className="text-black opacity-80 text-lg  font-medium font-inter">
 						<Link to="">About Us</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
 			</div>
 			<div className="flex justify-between items-center lg:hidden">
 				<h1 className="text-4xl text-[#3F787B] font-semibold pr-10  font-inter">
-					Shop Easy
+					Firststore.io
 				</h1>
 				<div onClick={() => setOpen(!open)}>
 					{open ? (
@@ -60,7 +60,7 @@ const Navbar = () => {
 			>
 				<ul className="flex flex-col gap-10 ">
 					<li className="text-3xl text-[#3F787B] font-medium  font-inter">
-						<Link to={"/"}>Shop Easy</Link>
+						<Link to={"/"}>Firststore.io</Link>
 					</li>
 					<li className="text-2xl text-black font-medium  font-inter ">
 						<Link
