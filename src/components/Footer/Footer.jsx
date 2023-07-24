@@ -11,7 +11,7 @@ const Footer = () => {
 					<div className="flex flex-row lg:flex-col justify-between w-full sm:w-auto  gap-5">
 						<div className="flex flex-col gap-5 justify-around w-full">
 							<h3 className="font-semibold text-xl">SHOP EASY</h3>
-							<p className=" font-normal text-base text-justify lg:w-max-[200px] md:block w-full">
+							<p className=" font-normal text-base text-justify lg:max-w-[200px]  w-full">
 								Shop Easy is your one-stop destination for all your grocery
 								shopping needs. We offer a wide range of high-quality products,
 								including fresh produce, pantry staples, household items, and
