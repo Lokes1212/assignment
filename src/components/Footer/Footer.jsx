@@ -4,7 +4,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 const Footer = () => {
 	return (
-		<footer className="py-10  px-4 lg:px-24 bg-[#313934] text-white w-full">
+		<footer className="py-10  px-4 lg:px-24 bg-footer-texture text-white w-full">
 			<div>
 				{/* childs */}
 				<div className="flex  justify-between  lg:flex-row flex-wrap gap-10">
@@ -73,13 +73,13 @@ const Footer = () => {
 						<h3 className="font-semibold text-2xl uppercase">
 							Let&apos;s Get Started
 						</h3>
-						<div className="border rounded-full border-white flex px-2 py-2 w-full">
+						<div className="border rounded-full border-white flex items-center px-2 py-1 sm:py-2  w-full max-w-[250px] sm:max-w-sm">
 							<input
 								type="email"
-								placeholder="Enter your email"
-								className="bg-transparent px-4 py-1 outline-none"
+								placeholder="Enter Your E-mail"
+								className="bg-transparent px-2 py-1 outline-none min-w-[150px] "
 							/>
-							<button className=" px-6  rounded-full block bg-[#39634A]">
+							<button className="px-4 sm:px-6 sm:py-1 rounded-full block bg-[#B20F0F] ">
 								Submit
 							</button>
 						</div>

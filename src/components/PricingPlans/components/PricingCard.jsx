@@ -2,18 +2,18 @@
 const PricingCard = ({ title, description, price, btnText, featuresList }) => {
 	// console.log(featuresList);
 	return (
-		<div className="p-4 bg-[#AEBEBE] text-black rounded-xl">
-			<h3 className="font-semibold text-4xl font-inter">{title}</h3>
+		<div className="p-4 bg-[#007B80] text-white rounded-xl">
+			<h3 className="font-semibold text-4xl font-inter ">{title}</h3>
 			<p className="py-2 font-normal text-lg font-inter">{description}</p>
 			<div className="pt-10 ">
 				<p className="text-lg font-inter ">
 					Starting at{" "}
-					<span className="text-[#39634A] text-2xl font-bold">₹{price}</span>{" "}
+					<span className="text-[#000602] text-2xl font-bold">₹{price}</span>{" "}
 					<br /> per month for first 3 months
 				</p>
 			</div>
 			<div className="py-10">
-				<button className="bg-[#39634A] rounded-md px-6 py-2 text-2xl font-semibold text-white">
+				<button className="bg-[#C11313] rounded-md px-6 py-2 text-2xl font-semibold text-white">
 					{btnText}
 				</button>
 			</div>

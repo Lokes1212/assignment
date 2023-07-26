@@ -17,14 +17,14 @@ const Faq = (props) => {
 				<div className="w-full font-semibold text-xl">{data.question}</div>
 				{data.active === 1 ? (
 					<p
-						className="text-5xl text-[#1976D2] font-bold rotate-90 cursor-pointer duration-500 group-[.is-active]:rotate-[360deg]"
+						className="text-5xl text-[#181F5E] font-bold rotate-90 cursor-pointer duration-500 group-[.is-active]:rotate-[360deg]"
 						onClick={handleToggleActive}
 					>
 						-
 					</p>
 				) : (
 					<p
-						className="text-3xl text-[#1976D2] font-bold rotate-90 cursor-pointer duration-500 group-[.is-active]:rotate-[360deg]"
+						className="text-3xl text-[#181F5E] font-bold rotate-90 cursor-pointer duration-500 group-[.is-active]:rotate-[360deg]"
 						onClick={handleToggleActive}
 					>
 						+

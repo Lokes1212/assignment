@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
 	AiOutlineCloseCircle,
 	AiOutlineMenu,
@@ -8,6 +8,22 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const scroll = useRef(null);
+
+	useEffect(() => {
+		if (open) {
+			const handleScroll = () => {
+				const scrollPosition = window.scrollY; // => scroll position
+				if (scrollPosition > 50) {
+					setOpen(false);
+				}
+			};
+			window.addEventListener("scroll", handleScroll);
+			return () => {
+				window.removeEventListener("scroll", handleScroll);
+			};
+		}
+	}, [open]);
 	return (
 		<nav className="py-6 px-6 lg:px-24 bg-white">
 			<div className=" items-center justify-between hidden lg:flex">
@@ -16,13 +32,13 @@ const Navbar = () => {
 						<Link to={"/"}>First Store</Link>
 					</li>
 					<li className="text-black opacity-80 text-lg  font-medium font-inter">
-						<Link to="">About Us</Link>
+						<Link to="/about">About Us</Link>
 					</li>
 					<li className="text-black opacity-80 text-lg font-medium font-inter">
 						<Link to="">Features</Link>
 					</li>
 					<li className="text-black opacity-80 text-lg font-medium font-inter">
-						<Link to="">Products</Link>
+						<Link to="/products">Products</Link>
 					</li>
 					<li className="text-black opacity-80 text-lg font-medium font-inter">
 						<Link to="">Policy</Link>
@@ -54,17 +70,25 @@ const Navbar = () => {
 			</div>
 			{/* mobile navbar */}
 			<div
-				className={`absolute drop-shadow-md lg:hidden bg-white top-0 left-0 transform duration-300  origin-left  w-[70%] z-20 h-screen flex justify-between px-14 py-16 ${
-					open ? "translate-x-0" : "-translate-x-full"
+				ref={scroll}
+				className={`absolute drop-shadow-md lg:hidden  bg-white top-0 left-0 transform duration-300  origin-top  w-[100%] z-20 h-screen flex flex-col  px-14 py-6 ${
+					open ? "translate-y-0 " : "-translate-y-full "
 				} `}
 			>
-				<ul className="flex flex-col gap-10 ">
-					<li className="text-3xl text-[#3F787B] font-medium  font-inter">
+				<div className="flex justify-between items-center mb-10  ">
+					<h1 className="text-3xl text-[#3F787B] font-medium  font-inter">
 						<Link to={"/"}>First Store</Link>
-					</li>
+					</h1>
+					<AiOutlineCloseCircle
+						className="text-3xl cursor-pointer"
+						onClick={() => setOpen(!open)}
+					/>
+				</div>
+
+				<ul className="flex flex-col gap-10 ">
 					<li className="text-2xl text-black font-medium  font-inter ">
 						<Link
-							to={"/"}
+							to={"/about"}
 							className=""
 						>
 							About Us
@@ -74,13 +98,13 @@ const Navbar = () => {
 						<Link to={"/"}>Features</Link>
 					</li>
 					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/"}>Products</Link>
+						<Link to={"/products"}>Products</Link>
 					</li>
 					<li className="text-2xl text-black font-medium  font-inter">
 						<Link to={"/"}>Policy</Link>
 					</li>
 					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/"}>Login</Link>
+						<Link to={"/login"}>Login</Link>
 					</li>
 				</ul>
 			</div>

@@ -11,6 +11,10 @@ export default {
 				jakarta: ["Plus Jakarta Sans", "sans-serif"],
 				roboto: ["Roboto", "sans-serif"],
 			},
+			backgroundImage: {
+				"footer-texture":
+					"linear-gradient(to  right , rgba(7, 13, 63, 1),rgba(0, 123, 128, 1))",
+			},
 		},
 	},
 	plugins: [],

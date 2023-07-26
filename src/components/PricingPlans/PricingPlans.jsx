@@ -40,7 +40,8 @@ const PricingPlans = () => {
 				Unlock premium marketing tools at the most affordable rates to
 				supercharge your marketing efforts.
 			</h2>
-			<div className="flex gap-10 py-10 flex-col lg:flex-row">
+			{/* bg-[#0C113C] */}
+			<div className="flex gap-10 py-10 flex-col lg:flex-row ">
 				<PricingCard
 					title={"Basic"}
 					description={
