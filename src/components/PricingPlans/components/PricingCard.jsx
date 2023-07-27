@@ -4,7 +4,7 @@ const PricingCard = ({ title, description, price, btnText, featuresList }) => {
 	return (
 		<div className="p-4 bg-[#007B80] text-white rounded-xl">
 			<h3 className="font-semibold text-4xl font-inter ">{title}</h3>
-			<p className="py-2 font-normal text-lg font-inter">{description}</p>
+			<p className="py-2 font-normal text-base font-inter">{description}</p>
 			<div className="pt-10 ">
 				<p className="text-lg font-inter ">
 					Starting at{" "}
@@ -17,7 +17,7 @@ const PricingCard = ({ title, description, price, btnText, featuresList }) => {
 					{btnText}
 				</button>
 			</div>
-			<span className="w-full h-[2px] bg-white absolute left-0"></span>
+
 			<div className="pt-10 pb-12">
 				<h5 className="font-semibold text-2xl font-inter">FEATURES</h5>
 				<ul className="list-disc pl-8 py-3 font-normal text-xl font-inter">

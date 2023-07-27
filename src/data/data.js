@@ -5,6 +5,11 @@ import icon4 from "../assets/icons/delivery-ic4.png";
 import shippingicon1 from "../assets/icons/shipping-ic1.png";
 import shippingicon2 from "../assets/icons/shipping-ic2.png";
 import shippingicon3 from "../assets/icons/shipping-ic3.png";
+// products images
+import furniture1 from "../assets/products/furniture/sofa.jpg";
+import furniture2 from "../assets/products/furniture/dining-table.jpg";
+import furniture3 from "../assets/products/furniture/bed.jpg";
+import furniture4 from "../assets/products/furniture/office-desk.jpg";
 export const shoppingData = [
 	{
 		id: 1,
@@ -112,5 +117,32 @@ export const advancedFeatures = [
 	{
 		id: 6,
 		title: "Duties and import taxes",
+	},
+];
+
+export const furnitureData = [
+	{
+		id: 1,
+		title: "Sofa Set",
+		price: 2000,
+		img: furniture1,
+	},
+	{
+		id: 2,
+		title: "Dining Table",
+		price: 1500,
+		img: furniture2,
+	},
+	{
+		id: 3,
+		title: "Bed",
+		price: 1000,
+		img: furniture3,
+	},
+	{
+		id: 4,
+		title: "Office Desk",
+		price: 500,
+		img: furniture4,
 	},
 ];

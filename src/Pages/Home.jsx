@@ -20,7 +20,8 @@ const Home = () => {
 				title={"Deliver an unparalleled online shopping experience."}
 				data={shoppingData}
 				img={shoppingImg}
-				bgColor={"#FFFFFF"}
+				bgColor={"#0C113C"}
+				textColor={"text-white"}
 				msImg={msShoppingImg}
 			/>
 			<Delivery
@@ -29,6 +30,7 @@ const Home = () => {
 				img={shippingImg}
 				msImg={msShippingImg}
 				bgColor={"#F2F2F2"}
+				textColor={"text-black"}
 			/>
 			<Payments />
 			<PricingPlans />
