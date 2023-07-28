@@ -6,14 +6,6 @@ import shippingicon1 from "../assets/icons/shipping-ic1.png";
 import shippingicon2 from "../assets/icons/shipping-ic2.png";
 import shippingicon3 from "../assets/icons/shipping-ic3.png";
 // products images
-import furniture1 from "../assets/products/furniture/sofa.jpg";
-import furniture2 from "../assets/products/furniture/dining-table.jpg";
-import furniture3 from "../assets/products/furniture/bed.jpg";
-import furniture4 from "../assets/products/furniture/office-desk.jpg";
-import fruit1 from "../assets/products/fruits/apple.jpg";
-import fruit2 from "../assets/products/fruits/strawvery.jpg";
-import fruit3 from "../assets/products/fruits/carrot.jpg";
-import fruit4 from "../assets/products/fruits/cucumber.jpg";
 
 export const shoppingData = [
 	{
@@ -130,25 +122,25 @@ export const furnitureData = [
 		id: 1,
 		title: "Sofa Set",
 		price: 2000,
-		img: furniture1,
+		img: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
 	},
 	{
 		id: 2,
 		title: "Dining Table",
 		price: 1500,
-		img: furniture2,
+		img: "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
 	},
 	{
 		id: 3,
 		title: "Bed",
 		price: 1000,
-		img: furniture3,
+		img: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
 	},
 	{
 		id: 4,
 		title: "Office Desk",
 		price: 500,
-		img: furniture4,
+		img: "https://images.unsplash.com/photo-1633789638578-eef0da1dc063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
 	},
 ];
 
@@ -156,26 +148,26 @@ export const GroceriesData = [
 	{
 		id: 1,
 		title: "Rice (Basmati)",
-		price: 2000,
-		img: furniture1,
+		price: 200,
+		img: "https://img.freepik.com/premium-vector/premium-rice-packaging-template-vector-illustration_619130-1185.jpg?size=626&ext=jpg&ga=GA1.1.736582667.1684306090&semt=ais",
 	},
 	{
 		id: 2,
 		title: "Milk",
 		price: 1500,
-		img: furniture2,
+		img: "https://img.freepik.com/premium-psd/milk-bottle-packaging-mockup_439185-1193.jpg?w=900",
 	},
 	{
 		id: 3,
 		title: "Bread",
 		price: 1000,
-		img: furniture3,
+		img: "https://img.freepik.com/premium-psd/bread-pouch-packaging-mockup_47987-3566.jpg?size=626&ext=jpg&ga=GA1.1.736582667.1684306090&semt=ais",
 	},
 	{
 		id: 4,
 		title: "Yogurt (Plain)",
 		price: 500,
-		img: furniture4,
+		img: "https://img.freepik.com/free-psd/yogurt-packaging-mockup_1310-662.jpg?size=626&ext=jpg&ga=GA1.1.736582667.1684306090&semt=sph",
 	},
 ];
 export const FruitsData = [
@@ -183,24 +175,81 @@ export const FruitsData = [
 		id: 1,
 		title: "Apple",
 		price: 100,
-		img: fruit1,
+		img: "https://images.unsplash.com/photo-1606757389723-23c4bf501fba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
 	},
 	{
 		id: 2,
 		title: "Cucumbers",
 		price: 1500,
-		img: fruit4,
+		img: "https://images.unsplash.com/photo-1587411768638-ec71f8e33b78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
 	},
 	{
 		id: 3,
 		title: "Strawberries",
 		price: 1000,
-		img: fruit2,
+		img: "https://images.unsplash.com/photo-1564518098628-c3a4058a1e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
 	},
 	{
 		id: 4,
 		title: "Carrot ",
 		price: 500,
-		img: fruit3,
+		img: "https://plus.unsplash.com/premium_photo-1664527307650-7de397f25c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+	},
+];
+
+export const ElectronicsData = [
+	{
+		id: 1,
+		title: "Television",
+		price: 1000,
+		img: "https://images.unsplash.com/photo-1461151304267-38535e780c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80",
+	},
+	{
+		id: 2,
+		title: "Refrigerator",
+		price: 1500,
+		img: "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+	},
+	{
+		id: 3,
+		title: "Air Conditioner",
+		price: 1000,
+		img: "https://images.unsplash.com/photo-1436473849883-bb3464c23e93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+	},
+	{
+		id: 4,
+		title: "Washing Machine ",
+		price: 500,
+		img: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+	},
+];
+
+export const testimonials = [
+	{
+		id: 1,
+		name: "Daily Bloom",
+		description:
+			"Great shopping experience! The quality of products and the prompt delivery exceeded my expectations. Highly recommended!",
+		imgUrl:
+			"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+		rating: 5,
+	},
+	{
+		id: 2,
+		name: "Robert B",
+		description:
+			"I bought a gaming mouse, and it's been a game-changer for my gaming sessions. Great product, and the delivery was quick",
+		imgUrl:
+			"https://images.unsplash.com/photo-1584043720379-b56cd9199c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+		rating: 5,
+	},
+	{
+		id: 3,
+		name: "Alex T",
+		description:
+			"Fresh and organic groceries are my go-to from this app. I can trust the quality, and the selection is extensive",
+		imgUrl:
+			"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+		rating: 4,
 	},
 ];

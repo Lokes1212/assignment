@@ -21,11 +21,11 @@ const Card = ({ description, image, title }) => {
 };
 const Payments = () => {
 	return (
-		<section className="py-4 lg:py-10  lg:pb-20 px-4 lg:px-24 bg-[#0C113C] text-white">
+		<section className="py-4 lg:py-10  lg:pb-20 px-4 lg:px-24 bg-[#0C113C] text-white ">
 			<h1 className="text-center  text-md lg:text-4xl font-bold lg:font-semibold pb-4 lg:pb-14  font-fira">
 				So many ways to pay
 			</h1>
-			<div className="flex flex-col lg:flex-row gap-10 justify-between ">
+			<div className="flex flex-col lg:flex-row gap-10 justify-between max-w-[1200px] w-full mx-auto">
 				<Card
 					title={"Payment methods"}
 					image={image1}

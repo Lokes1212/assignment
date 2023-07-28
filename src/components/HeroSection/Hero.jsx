@@ -13,22 +13,22 @@ const Slide = () => {
 					className="w-full min-h-fit"
 				/>
 			</div>
-			<div className="absolute top-2 left-2 sm:py-12 lg:px-14 lg:top-32 w-1/2 lg:w-full text-white">
-				<h1 className="text-[18px] md:text-4xl  lg:text-5xl font-bold py-[2px]">
+			<div className="absolute top-2 left-2 sm:py-12 lg:px-14 lg:top-32 2xl:top-36 w-1/2 lg:w-full text-white">
+				<h1 className="text-[18px] md:text-4xl  lg:text-5xl  font-bold py-[2px] 2xl:text-6xl">
 					First Store
 				</h1>
 
-				<h2 className="text-[12px] md:text-2xl  lg:text-4xl font-semibold py-[5px]">
+				<h2 className="text-[12px] md:text-2xl  lg:text-4xl font-semibold py-[5px] 2xl:text-5xl">
 					Simplify Your Shopping Experience
 				</h2>
 
-				<p className="text-[8px]  md:text-base md:py-1 lg:py-2 font-normal lg:w-1/2 opacity-90">
+				<p className="text-[8px]  md:text-base md:py-1 lg:py-2 font-normal lg:w-1/2 2xl:w-[25%] 2xl:text-lg opacity-90">
 					Discover a vast selection of groceries, furniture, electronics, and
 					more, all in one convenient app. No matter what success looks like for
 					you, you can do it with Shop Easy.
 				</p>
 				<div className="pt-3 md:pt-10">
-					<button className="bg-white drop-shadow-xl text-black rounded-md text-[10px] px-4 py-1 md:px-6 md:py-2  md:text-base font-medium ">
+					<button className="bg-[#C90E0E] drop-shadow-xl text-white rounded-md text-[10px] px-4 py-1 md:px-6 md:py-2  md:text-base font-medium 2xl:text-lg">
 						Try it free
 					</button>
 				</div>

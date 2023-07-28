@@ -51,7 +51,7 @@ const Navbar = () => {
 					<button className="text-xl font-medium text-black opacity-80 font-inter">
 						<Link to="/login">Login</Link>
 					</button>
-					<button className="bg-[#2F9A5A] font-medium text-white text-sm px-2 py-2 rounded-xl font-raleway">
+					<button className="bg-[#C90E0E] font-medium text-white text-sm px-2 py-2 rounded-md font-raleway">
 						Get started
 					</button>
 				</div>
