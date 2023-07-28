@@ -70,11 +70,11 @@ const Product = () => {
 						url={"/products"}
 						data={furnitureData}
 					/>
-					<Slider
+					{/* <Slider
 						title={"Fruits and vegetables"}
 						url={"/products"}
 						data={FruitsData}
-					/>
+					/> */}
 				</h1>
 			</div>
 		</section>
