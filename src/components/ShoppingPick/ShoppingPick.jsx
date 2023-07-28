@@ -16,7 +16,7 @@ const ShoppingPick = () => {
 	return (
 		<section className="px-4 lg:pb-20 lg:px-24  bg-white">
 			<h1 className="text-center font-semibold lg:text-5xl text-xl lg:py-14 py-6 font-fira opacity-80">
-				How can Firststore help you?
+				How can First Store help you?
 			</h1>
 			<div className="flex flex-col  md:flex-row md:justify-between gap-14 pt-4">
 				<div className="bg-[#F0EBEB] pt-10 px-6 pb-4 w-max-[500px] w-full max-h-[700px] h-full max-w-[500px] ">

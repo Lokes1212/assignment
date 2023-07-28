@@ -2,7 +2,7 @@
 import ProductImg from "../../assets/product.png";
 import ProductMobileImg from "../../assets/product-ms.jpg";
 import Slider from "./components/Slider";
-import { furnitureData } from "../../data/data";
+import { furnitureData, FruitsData } from "../../data/data";
 
 const MobilePoster = () => {
 	return (
@@ -69,6 +69,11 @@ const Product = () => {
 						title={"Furniture"}
 						url={"/products"}
 						data={furnitureData}
+					/>
+					<Slider
+						title={"Fruits and vegetables"}
+						url={"/products"}
+						data={FruitsData}
 					/>
 				</h1>
 			</div>

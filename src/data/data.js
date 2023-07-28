@@ -10,6 +10,11 @@ import furniture1 from "../assets/products/furniture/sofa.jpg";
 import furniture2 from "../assets/products/furniture/dining-table.jpg";
 import furniture3 from "../assets/products/furniture/bed.jpg";
 import furniture4 from "../assets/products/furniture/office-desk.jpg";
+import fruit1 from "../assets/products/fruits/apple.jpg";
+import fruit2 from "../assets/products/fruits/strawvery.jpg";
+import fruit3 from "../assets/products/fruits/carrot.jpg";
+import fruit4 from "../assets/products/fruits/cucumber.jpg";
+
 export const shoppingData = [
 	{
 		id: 1,
@@ -144,5 +149,58 @@ export const furnitureData = [
 		title: "Office Desk",
 		price: 500,
 		img: furniture4,
+	},
+];
+
+export const GroceriesData = [
+	{
+		id: 1,
+		title: "Rice (Basmati)",
+		price: 2000,
+		img: furniture1,
+	},
+	{
+		id: 2,
+		title: "Milk",
+		price: 1500,
+		img: furniture2,
+	},
+	{
+		id: 3,
+		title: "Bread",
+		price: 1000,
+		img: furniture3,
+	},
+	{
+		id: 4,
+		title: "Yogurt (Plain)",
+		price: 500,
+		img: furniture4,
+	},
+];
+export const FruitsData = [
+	{
+		id: 1,
+		title: "Apple",
+		price: 100,
+		img: fruit1,
+	},
+	{
+		id: 2,
+		title: "Cucumbers",
+		price: 1500,
+		img: fruit4,
+	},
+	{
+		id: 3,
+		title: "Strawberries",
+		price: 1000,
+		img: fruit2,
+	},
+	{
+		id: 4,
+		title: "Carrot ",
+		price: 500,
+		img: fruit3,
 	},
 ];
