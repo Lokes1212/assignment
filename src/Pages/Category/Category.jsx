@@ -78,7 +78,7 @@ const Category = () => {
 					/>
 					<Slider
 						title={"Groceries"}
-						url={"/products/groceries"}
+						url={"/products/grocery"}
 						data={GroceriesData}
 					/>
 					<Slider

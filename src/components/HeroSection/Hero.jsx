@@ -5,7 +5,7 @@ import { Pagination } from "swiper/modules";
 import heroImg from "../../assets/hero-bg.png";
 const Slide = () => {
 	return (
-		<div className="w-full">
+		<div className="w-full hidden md:block">
 			<div className="w-full relative">
 				<img
 					src={heroImg}
@@ -29,6 +29,39 @@ const Slide = () => {
 				</p>
 				<div className="pt-3 md:pt-10">
 					<button className="bg-[#C90E0E] drop-shadow-xl text-white rounded-md text-[10px] px-4 py-1 md:px-6 md:py-2  md:text-base font-medium 2xl:text-lg">
+						Try it free
+					</button>
+				</div>
+			</div>
+		</div>
+	);
+};
+const MobileSlide = () => {
+	return (
+		<div className="relative w-full border md:hidden">
+			<img
+				src={
+					"https://plus.unsplash.com/premium_photo-1664202219210-abf6ae3bdf04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+				}
+				className="w-full  h-full relative object-contain "
+			/>
+			<div className="absolute top-[50%] left-[50%]  h-full w-full bg-heroImg">
+				<div className="flex flex-col justify-center items-center h-full text-white my-4 px-2">
+					<h1 className="font-fira font-medium  text-2xl sm:text-4xl">
+						First Store
+					</h1>
+					<h2 className="sm:text-3xl sm:py-2">
+						Simplify Your Shopping Experience
+					</h2>
+					<p className="text-[10px] sm:text-xs  text-center font-inter font-normal pb-4">
+						Discover a vast selection of groceries, furniture, electronics, and
+						more, all in one convenient app.
+						<span className="hidden sm:block">
+							No matter what success looks like for you, you can do it with Shop
+							Easy.
+						</span>
+					</p>
+					<button className="bg-[#DB0303] text-white font-medium text-xs sm:text-sm font-inter px-4 sm:px-6 py-2 rounded-md ">
 						Try it free
 					</button>
 				</div>
@@ -75,12 +108,15 @@ const Hero = () => {
 			className="mySwiper"
 		>
 			<SwiperSlide>
+				<MobileSlide />
 				<Slide />
 			</SwiperSlide>
 			<SwiperSlide>
+				<MobileSlide />
 				<Slide />
 			</SwiperSlide>
 			<SwiperSlide>
+				<MobileSlide />
 				<Slide />
 			</SwiperSlide>
 		</Swiper>

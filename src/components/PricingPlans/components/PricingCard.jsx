@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
-const PricingCard = ({ title, description, price, btnText, featuresList }) => {
+const PricingCard = ({
+	title,
+	description,
+	price,
+	btnText,
+	featuresList,
+	border,
+}) => {
 	// console.log(featuresList);
 	return (
-		<div className="p-4 bg-[#007B80] text-white rounded-xl">
+		<div className={`p-4 bg-[#007B80] text-white rounded-xl ${border} `}>
 			<h3 className="font-semibold text-4xl font-inter ">{title}</h3>
 			<p className="py-2 font-normal text-base font-inter">{description}</p>
 			<div className="pt-10 ">

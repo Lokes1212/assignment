@@ -64,6 +64,7 @@ const PricingPlans = () => {
 							price={"1499"}
 							btnText={"Choose Advanced"}
 							featuresList={advancedFeatures}
+							border={"border-4 border-[#F2AD07]"}
 						/>
 					</div>
 				</div>
