@@ -19,11 +19,10 @@ const BusinessTool = () => {
 				<Swiper
 					slidesPerView={4}
 					autoplay={{
-						delay: 2500,
+						delay: 2000,
 						disableOnInteraction: false,
 					}}
 					modules={[Autoplay]}
-					loop={true}
 					breakpoints={{
 						320: {
 							slidesPerView: 1,
