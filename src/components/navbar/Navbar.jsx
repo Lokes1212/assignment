@@ -167,7 +167,7 @@ const Navbar = () => {
 						<li>
 							<div>
 								<Link
-									to=""
+									to="/product/123"
 									className="tracking-wider uppercase font-jakarta font-medium text-lg after:block after:w-0 after:h-1 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full after:mt-6"
 								>
 									Pricing
