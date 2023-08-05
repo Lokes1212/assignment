@@ -10,6 +10,7 @@ export default {
 				poppins: ["Poppins", "sans-serif"],
 				jakarta: ["Plus Jakarta Sans", "sans-serif"],
 				roboto: ["Roboto", "sans-serif"],
+				dmsans: ["DM Sans", "sans-serif"],
 			},
 			backgroundImage: {
 				"footer-texture":

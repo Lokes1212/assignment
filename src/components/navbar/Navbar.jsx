@@ -4,109 +4,187 @@ import {
 	AiOutlineMenu,
 	AiOutlineSearch,
 } from "react-icons/ai";
+import { TbHomeEdit } from "react-icons/tb";
+import { CgProfile, CgTemplate } from "react-icons/cg";
+import { FiUsers } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import logoWhite from "../../assets/landingpage/logo.png";
+import businessToolIcn from "../../assets/landingpage/icn-businesstool.png";
+import templateIcn from "../../assets/landingpage/icn-templates.png";
+import careerIcn from "../../assets/landingpage/icn-career.png";
+import faqIcn from "../../assets/landingpage/icn-faq.png";
+import aboutIcn from "../../assets/landingpage/icn-about.png";
 const Navbar = () => {
-	const [open, setOpen] = useState(false);
-	const scroll = useRef(null);
+	// const [open, setOpen] = useState(false);
+	// const scroll = useRef(null);
 
-	useEffect(() => {
-		if (open) {
-			const handleScroll = () => {
-				const scrollPosition = window.scrollY; // => scroll position
-				if (scrollPosition > 50) {
-					setOpen(false);
-				}
-			};
-			window.addEventListener("scroll", handleScroll);
-			return () => {
-				window.removeEventListener("scroll", handleScroll);
-			};
-		}
-	}, [open]);
+	// useEffect(() => {
+	// 	if (open) {
+	// 		const handleScroll = () => {
+	// 			const scrollPosition = window.scrollY; // => scroll position
+	// 			if (scrollPosition > 50) {
+	// 				setOpen(false);
+	// 			}
+	// 		};
+	// 		window.addEventListener("scroll", handleScroll);
+	// 		return () => {
+	// 			window.removeEventListener("scroll", handleScroll);
+	// 		};
+	// 	}
+	// }, [open]);
 	return (
-		<nav className="py-6 px-6 lg:px-24 bg-white">
-			<div className=" items-center justify-between hidden lg:flex">
-				<ul className="flex items-center gap-5">
-					<li className="text-2xl text-[#3F787B] font-medium pr-10 font-inter">
-						<Link to={"/"}>First Store</Link>
-					</li>
-					<li className="text-black opacity-80 text-lg  font-medium font-inter">
-						<Link to="/about">About Us</Link>
-					</li>
-					<li className="text-black opacity-80 text-lg font-medium font-inter">
-						<Link to="">Features</Link>
-					</li>
-					<li className="text-black opacity-80 text-lg font-medium font-inter">
-						<Link to="/products">Products</Link>
-					</li>
-					<li className="text-black opacity-80 text-lg font-medium font-inter">
-						<Link to="">Policy</Link>
-					</li>
-				</ul>
-				<div className="flex items-center gap-4">
-					<span className="">
-						<AiOutlineSearch className="text-2xl" />
+		<nav className="pt-6  px-4 lg:px-20 navbar-bg flex justify-between ">
+			<div className="flex justify-between items-center text-white gap-10">
+				{/* branding */}
+				<div className="flex items-center  gap-2 pb-6">
+					<div className="">
+						<img
+							src={logoWhite}
+							alt=""
+							className="w-[35px]"
+						/>
+					</div>
+					<span className=" text-white font-bold text-[20px] md:text-[24px] font-dmsans tracking-wide">
+						FirstStore
 					</span>
-					<button className="text-xl font-medium text-black opacity-80 font-inter">
-						<Link to="/login">Login</Link>
-					</button>
-					<button className="bg-[#C90E0E] font-medium text-white text-sm px-2 py-2 rounded-md font-raleway">
-						Get started
-					</button>
 				</div>
-			</div>
-			<div className="flex justify-between items-center lg:hidden">
-				<h1 className="text-4xl text-[#3F787B] font-semibold pr-10  font-inter">
-					Firststore.io
-				</h1>
-				<div onClick={() => setOpen(!open)}>
-					{open ? (
-						<AiOutlineCloseCircle className="text-2xl cursor-pointer" />
-					) : (
-						<AiOutlineMenu className="text-2xl cursor-pointer " />
-					)}
-				</div>
-			</div>
-			{/* mobile navbar */}
-			<div
-				ref={scroll}
-				className={`absolute drop-shadow-md lg:hidden  bg-white top-0 left-0 transform duration-300  origin-top  w-[100%] z-20 h-screen flex flex-col  px-14 py-6 ${
-					open ? "translate-y-0 " : "-translate-y-full "
-				} `}
-			>
-				<div className="flex justify-between items-center mb-10  ">
-					<h1 className="text-3xl text-[#3F787B] font-medium  font-inter">
-						<Link to={"/"}>First Store</Link>
-					</h1>
-					<AiOutlineCloseCircle
-						className="text-3xl cursor-pointer"
-						onClick={() => setOpen(!open)}
-					/>
-				</div>
+				{/* branding end */}
+				<div className="hidden lg:block">
+					<ul className="flex items-center gap-10">
+						<li>
+							<div className="relative group">
+								<Link
+									to=""
+									className=" tracking-wider uppercase font-jakarta font-medium text-lg after:block after:w-0 after:h-1 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full mt-6 after:mt-6"
+								>
+									our features
+								</Link>
+								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[530px]  opacity-0 navbar-hover  group-hover:h-[300px] border absolute group-hover:z-10 top-[60px] right-[50%]  items-center px-6 gap-5  ease-linear duration-300 transition transform translate-x-[50%] ">
+									<div>
+										<div className="flex items-center gap-2 w-full justify-start mt-1">
+											<div className="">
+												{/* <CgTemplate className="text-4xl" /> */}
+												<img
+													src={templateIcn}
+													alt=""
+													className="w-[50px] h-[50px] object-cover "
+												/>
+											</div>
+											<span className="font-jakarta text-lg font-semibold">Templates</span>
+										</div>
+										<p className="my-4 w-[90%] font-jakarta font-normal text-base capitalize">
+											Multiple themes Optimised for multiple devices
+										</p>
+									</div>
 
-				<ul className="flex flex-col gap-10 ">
-					<li className="text-2xl text-black font-medium  font-inter ">
-						<Link
-							to={"/about"}
-							className=""
-						>
-							About Us
-						</Link>
-					</li>
-					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/"}>Features</Link>
-					</li>
-					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/products"}>Products</Link>
-					</li>
-					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/"}>Policy</Link>
-					</li>
-					<li className="text-2xl text-black font-medium  font-inter">
-						<Link to={"/login"}>Login</Link>
-					</li>
-				</ul>
+									<div>
+										<div className="flex items-center gap-1 justify-start w-full">
+											<div className="">
+												{/* <TbHomeEdit className="text-4xl font-light" /> */}
+												<img
+													src={businessToolIcn}
+													alt=""
+													className=" "
+												/>
+											</div>
+											<span className="font-jakarta  text-lg font-semibold w-full">
+												Business Tools
+											</span>
+										</div>
+										<p className="my-4 font-jakarta font-normal text-base capitalize">
+											Use Free Tools to grow your Business{" "}
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div className="relative group">
+								<Link
+									to=""
+									className="tracking-wider uppercase font-jakarta font-medium text-lg after:block after:w-0 after:h-1 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full after:mt-6"
+								>
+									About us
+								</Link>
+								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[700px]  opacity-0 navbar-hover  group-hover:h-[250px] border absolute group-hover:z-10 top-[60px] right-[50%] transform translate-x-[50%]   items-center px-6 gap-5  ease-linear duration-300 transition">
+									<div>
+										<div className="flex items-center gap-2 w-full justify-start mt-1">
+											<div className="">
+												{/* <CgTemplate className="text-4xl" /> */}
+												<img
+													src={aboutIcn}
+													alt=""
+													className="w-[80%]"
+												/>
+											</div>
+											<span className="font-jakarta text-lg font-semibold">About</span>
+										</div>
+										<p className="my-4 w-[90%] font-jakarta font-normal text-base capitalize">
+											Multiple themes Optimised for multiple devices
+										</p>
+									</div>
+
+									<div>
+										<div className="flex items-center gap-1 justify-start w-full">
+											<div className="">
+												{/* <TbHomeEdit className="text-4xl font-light" /> */}
+												<img
+													src={careerIcn}
+													alt=""
+													className=" "
+												/>
+											</div>
+											<span className="font-jakarta  text-lg font-semibold w-full">
+												Career
+											</span>
+										</div>
+										<p className="my-4 font-jakarta font-normal text-base capitalize">
+											Use Free Tools to grow your Business{" "}
+										</p>
+									</div>
+
+									<div>
+										<div className="flex items-center gap-1 justify-start w-full">
+											<div className="">
+												{/* <TbHomeEdit className="text-4xl font-light" /> */}
+												<img
+													src={faqIcn}
+													alt=""
+													className=" "
+												/>
+											</div>
+											<span className="font-jakarta  text-lg font-semibold w-full">
+												FAQs
+											</span>
+										</div>
+										<p className="my-4 font-jakarta font-normal text-base capitalize">
+											Use Free Tools to grow your Business{" "}
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<Link
+									to=""
+									className="tracking-wider uppercase font-jakarta font-medium text-lg after:block after:w-0 after:h-1 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full after:mt-6"
+								>
+									Pricing
+								</Link>
+								<div></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div className="flex items-center gap-5 text-white pb-6">
+				<span>
+					<CgProfile className="text-3xl" />
+				</span>
+				<button className="hidden lg:inline-block uppercase navbtn px-6 py-2 rounded-md font-jakarta text-base font-semibold tracking-wider">
+					Start free trial
+				</button>
 			</div>
 		</nav>
 	);

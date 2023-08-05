@@ -17,28 +17,20 @@
 .drop-shadow-custom{
   box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.5);
 }
-.bg-heroImg{
+/* .bg-heroImg{
   background-image: linear-gradient(rgba(5, 9, 41, 0.75), rgba(5, 9, 41, 0.75));
   transform: translate(-50%, -50%);
+} */
+.hero-bg{
+  background-image: linear-gradient(100deg, #2F162A 100px, #1F1529, #16131F, #13111C, rgba(19, 17, 28,1) );
+  /* border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */
 }
 .testimonial-bg{
-
-    /* background-image: linear-gradient(90deg, rgba(54, 6, 92, 1), rgba(19, 18, 28, 1.0)); */
     background-image: linear-gradient(to bottom right,
           #2c172a 10%,
           #15121f,
           #16141b);
-    /* background-image: linear-gradient(75.51deg, rgba(17, 28, 134, 0.128) -54.9%, rgba(97, 106, 179, 0) 54.32%),
-        linear-gradient(0deg, #13111C, #13111C),
-        linear-gradient(89.72deg, rgba(158, 11, 162, 0.102) -19.69%, rgba(136, 52, 138, 0) 54.14%),
-        linear-gradient(305.37deg, rgba(162, 146, 4, 0.11) -41.76%, rgba(147, 136, 37, 0.004) 26.23%),
-        linear-gradient(120.74deg, rgba(176, 39, 39, 0.2) -9.51%, rgba(137, 51, 51, 0) 43.19%); */
-    /* background-image: linear-gradient(75.51deg, rgba(17, 28, 134, 0.128) -54.9%, rgba(97, 106, 179, 0) 54.32%),
-        linear-gradient(0deg, #13111C, #13111C),
-        linear-gradient(89.72deg, rgba(158, 11, 162, 0.102) -19.69%, rgba(136, 52, 138, 0) 54.14%),
-        linear-gradient(305.37deg, rgba(162, 146, 4, 0.11) -41.76%, rgba(147, 136, 37, 0.004) 26.23%),
-        linear-gradient(120.74deg, rgba(176, 39, 39, 0.2) -9.51%, rgba(137, 51, 51, 0) 43.19%); */
-        
 }
 .businesstool-bg{
   background-image: linear-gradient(96.99deg, rgba(16, 22, 165, 0.2) -39.29%, rgba(26, 31, 155, 0) 38.94%),
@@ -46,4 +38,49 @@
       linear-gradient(360deg, rgba(30, 65, 118, 0.2) -82%, rgba(22, 65, 130, 0) 15.89%),
       linear-gradient(180deg, rgba(41, 78, 207, 0.2) -64.56%, rgba(12, 58, 221, 0) 11%),
       linear-gradient(263.4deg, rgba(188, 45, 182, 0.2) -21.99%, rgba(159, 50, 155, 0) 28.47%);
+}
+.navbar-bg{
+    background: linear-gradient(to bottom , rgba(205, 50, 50, 0.17) 0%, rgba(174, 46, 46, 0.00) 100%), linear-gradient(210deg, rgba(114, 35, 101, 0.09) 0%, rgba(108, 51, 99, 0.01) 100%), linear-gradient(152deg, rgba(69, 41, 197, 0.01) 42.25%, rgba(81, 85, 190, 0.00) 100%), #13111C;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.navbtn{
+  /* border-radius: 10px; */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%), linear-gradient(197deg, rgba(146, 22, 141, 0.80) 0%, rgba(117, 29, 113, 0.40) 100%), linear-gradient(151deg, #36065C 0%, rgba(54, 6, 92, 0.19) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02);
+}
+.navbar-hover{
+background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #211328);
+}
+.svg svg{
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  margin-left: -5px;
+
+}
+.heroCard-bg{
+        background-image: linear-gradient(to bottom, #22163A, #1E1527,#1A141F,#201524,#25142A);
+}
+.heroCard-box-bg{
+  background:
+  linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%),
+    linear-gradient(180deg, rgba(41, 78, 207, 0.40) 0%, rgba(12, 58, 221, 0.00) 100%),
+    linear-gradient(231deg, rgba(106, 30, 118, 0.40) 0%, rgba(22, 65, 130, 0.00) 100%),
+    linear-gradient(150deg, rgba(16, 22, 165, 0.40) 0%, rgba(26, 31, 155, 0.00) 100%),
+    #13111C;
+    /* backdrop-filter: blur(10px); */
+  
+}
+.hero-blur{
+  /* background-image: linear-gradient(to bottom,#181730 10%,#191727 10%,#191825 10%,#251C38 10%,#1D1C2E 10%); */
+  /* backdrop-filter: blur(50px); */
+  /* background: 
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%),
+      linear-gradient(180deg, rgba(41, 78, 207, 0.40) 0%, rgba(12, 58, 221, 0.00) 100%),
+      linear-gradient(231deg, rgba(106, 30, 118, 0.40) 0%, rgba(22, 65, 130, 0.00) 100%),
+      linear-gradient(150deg, rgba(16, 22, 165, 0.40) 0%, rgba(26, 31, 155, 0.00) 100%),
+      #13111C; */
+      /* background-color: rgba(19, 17, 30,0.1); */
+      background-image: url('./assets/landingpage/box.png');
+      backdrop-filter: blur(100px);
 }

@@ -63,7 +63,7 @@ const Faq = ({ datas, toggleFAQ, index }) => {
 					datas.open
 						? "h-auto py-4 opacity-100 transition-all ease-out duration-300 "
 						: "opacity-0	h-0 transition-all ease-in duration-300 py-0"
-				} pl-8 md:pr-10 text-xl overflow-y-hidden   `}
+				} pl-8 md:pr-10 text-xl overflow-y-hidden text-[#D0CACA]  `}
 			>
 				{datas.answer}
 			</div>
@@ -114,7 +114,7 @@ const Faqs = () => {
 	};
 	return (
 		<section className="py-20 pb-20 px-4 lg:px-24 bg-[#13111C] text-white">
-			<h1 className="text-xl text-center  lg:text-4xl font-semibold  pb-14 uppercase font-jakarta">
+			<h1 className="text-xl text-center  lg:text-4xl font-bold  pb-14 uppercase font-jakarta">
 				Frequently asked questions
 			</h1>
 			<div className="max-w-[1200px] mx-auto">

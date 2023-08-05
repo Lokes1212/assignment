@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import Category from "./Pages/Category/Category";
 import Products from "./Pages/Products/Products";
 import Product from "./Pages/Product/Product";
+import "swiper/css";
+import "swiper/css/pagination";
 function App() {
 	return (
 		<BrowserRouter>

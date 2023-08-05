@@ -12,11 +12,13 @@ import PricingPlans from "../../components/PricingPlans/PricingPlans";
 import Faqs from "../../components/Faqs/Faqs";
 import Testimonial from "./components/Testimonial";
 import BusinessTool from "../../components/BusinessTool/BusinessTool";
+import HeroCard from "../../components/HeroCard/HeroCard";
 
 const Home = () => {
 	return (
 		<main className="overflow-x-hidden">
 			<Hero />
+			<HeroCard />
 			<ShoppingPick />
 			<Delivery
 				title={"Deliver an unparalleled online shopping experience."}

@@ -65,7 +65,7 @@ const Testimonial = () => {
 	return (
 		<section className="px-4 lg:px-20 py-6 lg:py-20 testimonial-bg ">
 			<div>
-				<h1 className="text-center font-bold font-jakarta text-3xl md:text-5xl uppercase text-white">
+				<h1 className="text-center font-bold font-jakarta text-3xl md:text-4xl uppercase text-white">
 					what our <span className="text-[#C41EFF]">customers say!!</span>
 				</h1>
 
