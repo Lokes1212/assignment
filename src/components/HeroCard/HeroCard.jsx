@@ -9,8 +9,8 @@ const Card = () => {
 					alt=""
 				/>
 			</div>
-			<div className=" ">
-				<div className=" w-full hero-blur h-full">
+			<div className="heroCard-box-bg">
+				<div className="w-full hero-blur">
 					<h4 className="font-jakarta font-bold text-4xl text-center w-[50%] mx-auto">
 						Affordable Pricing
 					</h4>

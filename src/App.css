@@ -68,7 +68,10 @@ background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #21
     linear-gradient(231deg, rgba(106, 30, 118, 0.40) 0%, rgba(22, 65, 130, 0.00) 100%),
     linear-gradient(150deg, rgba(16, 22, 165, 0.40) 0%, rgba(26, 31, 155, 0.00) 100%),
     #13111C;
-    /* backdrop-filter: blur(10px); */
+    opacity: 0.8;
+    /* backdrop-filter: blur(50px); */
+    /* -webkit-backdrop-filter: blur(50px); */
+    
   
 }
 .hero-blur{
@@ -81,6 +84,18 @@ background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #21
       linear-gradient(150deg, rgba(16, 22, 165, 0.40) 0%, rgba(26, 31, 155, 0.00) 100%),
       #13111C; */
       /* background-color: rgba(19, 17, 30,0.1); */
-      background-image: url('./assets/landingpage/box.png');
-      backdrop-filter: blur(100px);
+      /* background-image: url('./assets/landingpage/box.png'); */
+      /* backdrop-filter: blur(100px);
+      background: linear-gradient(90deg, #13111C, #13111C),
+          linear-gradient(45.32deg, rgba(42, 24, 153, 0.2) -28.51%, rgba(59, 35, 207, 0) 31.55%),
+          linear-gradient(155.73deg, rgba(54, 20, 192, 0.2) -19.15%, rgba(66, 29, 215, 0) 45.11%),
+          linear-gradient(202.21deg, rgba(77, 56, 208, 0.2) -23.53%, rgba(186, 73, 38, 0) 73.16%),
+          linear-gradient(339.53deg, rgba(159, 17, 128, 0.2) -8.95%, rgba(206, 82, 179, 0) 38.76%); */
+
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            /* border-radius: 20px; */
+            /* border: 1px solid rgba(255, 255, 255, 0.18); */
+            /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
 }
