@@ -62,16 +62,19 @@ background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #21
         background-image: linear-gradient(to bottom, #22163A, #1E1527,#1A141F,#201524,#25142A);
 }
 .heroCard-box-bg{
-  background:
+  /* background:
   linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%),
     linear-gradient(180deg, rgba(41, 78, 207, 0.40) 0%, rgba(12, 58, 221, 0.00) 100%),
     linear-gradient(231deg, rgba(106, 30, 118, 0.40) 0%, rgba(22, 65, 130, 0.00) 100%),
     linear-gradient(150deg, rgba(16, 22, 165, 0.40) 0%, rgba(26, 31, 155, 0.00) 100%),
     #13111C;
-    opacity: 0.8;
+    opacity: 0.8; */
     /* backdrop-filter: blur(50px); */
     /* -webkit-backdrop-filter: blur(50px); */
-    
+    background-image: url('./assets/landingpage/box.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   
 }
 .hero-blur{
@@ -98,4 +101,30 @@ background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #21
             /* border-radius: 20px; */
             /* border: 1px solid rgba(255, 255, 255, 0.18); */
             /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+}
+.template-bg{
+  background-image: linear-gradient(to bottom right,
+        #2c172a 10%,
+        #15121f,
+        #16141b);
+}
+.work-bg{
+  background-image: linear-gradient(to bottom right,
+        #32192D 10%,
+         
+        #15121F,
+        #13111C,
+        #15131C);
+}
+.footer-bg{
+  background-image: linear-gradient(to bottom right,
+        #32192D 10%,
+        #15121F,
+        #13111C,
+        #15131C);
+}
+@media  screen and (min-width: 1024px){
+  .hero-bg{
+    background-image: none;
+  }
 }
