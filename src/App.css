@@ -123,6 +123,13 @@ background-image: linear-gradient(90deg, #131226, #13111E, #13111C, #13111C, #21
         #13111C,
         #15131C);
 }
+.hero-shadow{
+background: rgba(54, 6, 92, 0.3);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
 @media  screen and (min-width: 1024px){
   .hero-bg{
     background-image: none;

@@ -52,14 +52,14 @@ const Navbar = () => {
 				<div className="hidden lg:block">
 					<ul className="flex items-center gap-10">
 						<li>
-							<div className="relative group">
+							<div className="relative group  ">
 								<Link
 									to=""
 									className=" tracking-wider uppercase font-jakarta font-medium text-lg after:block after:w-0 after:h-1 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full mt-6 after:mt-6"
 								>
 									our features
 								</Link>
-								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[530px]  opacity-0 navbar-hover  group-hover:h-[300px] border absolute group-hover:z-10 top-[60px] right-[50%]  items-center px-6 gap-5  ease-linear duration-300 transition transform translate-x-[50%] ">
+								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[530px]  opacity-0 navbar-hover  group-hover:h-[300px] border absolute group-hover:z-10 top-[60px] right-[50%]  items-center px-6 gap-5  ease-linear duration-300 transition transform translate-x-[50%] -z-10">
 									<div>
 										<div className="flex items-center gap-2 w-full justify-start mt-1">
 											<div className="">
@@ -106,7 +106,7 @@ const Navbar = () => {
 								>
 									About us
 								</Link>
-								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[700px]  opacity-0 navbar-hover  group-hover:h-[250px] border absolute group-hover:z-10 top-[60px] right-[50%] transform translate-x-[50%]   items-center px-6 gap-5  ease-linear duration-300 transition">
+								<div className="group-hover:flex group-hover:opacity-100 group-hover:w-[700px]  opacity-0 navbar-hover  group-hover:h-[250px] border absolute group-hover:z-10 top-[60px] right-[50%] transform translate-x-[50%]   items-center px-6 gap-5  ease-linear duration-300 transition -z-10 ">
 									<div>
 										<div className="flex items-center gap-2 w-full justify-start mt-1">
 											<div className="">
@@ -117,7 +117,12 @@ const Navbar = () => {
 													className="w-[80%]"
 												/>
 											</div>
-											<span className="font-jakarta text-lg font-semibold">About</span>
+											<Link
+												to="/about"
+												className="font-jakarta text-lg font-semibold"
+											>
+												About
+											</Link>
 										</div>
 										<p className="my-4 w-[90%] font-jakarta font-normal text-base capitalize">
 											Multiple themes Optimised for multiple devices

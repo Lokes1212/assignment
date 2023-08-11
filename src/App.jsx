@@ -10,6 +10,7 @@ import Products from "./Pages/Products/Products";
 import Product from "./Pages/Product/Product";
 import "swiper/css";
 import "swiper/css/pagination";
+import Template from "./Pages/Template/Template";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 function App() {
 	return (
@@ -39,6 +40,10 @@ function App() {
 				<Route
 					path="/product/123"
 					element={<Product />}
+				/>
+				<Route
+					path="/templates"
+					element={<Template />}
 				/>
 			</Routes>
 			<Footer />

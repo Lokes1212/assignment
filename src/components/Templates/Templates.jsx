@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import templateImg1 from "../../assets/landingpage/template-1.png";
 import templateImg2 from "../../assets/landingpage/template-2.png";
 import templateImg3 from "../../assets/landingpage/template-3.png";
@@ -30,9 +31,12 @@ const Templates = () => {
 					<TemplateCard imgUrl={templateImg3} />
 				</div>
 				<div className="lg:float-right md:px-16 flex items-center justify-center">
-					<button className=" uppercase  font-semibold text-base bg-[#4c2652] py-2 px-6 rounded ">
+					<Link
+						to="/templates"
+						className=" uppercase  font-semibold text-base bg-[#4c2652] py-2 px-6 rounded "
+					>
 						See all templates
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>
