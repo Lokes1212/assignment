@@ -11,6 +11,7 @@ import Product from "./Pages/Product/Product";
 import "swiper/css";
 import "swiper/css/pagination";
 import Template from "./Pages/Template/Template";
+import Faq from "./Pages/Faq/Faq";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 function App() {
 	return (
@@ -44,6 +45,10 @@ function App() {
 				<Route
 					path="/templates"
 					element={<Template />}
+				/>
+				<Route
+					path="/faq"
+					element={<Faq />}
 				/>
 			</Routes>
 			<Footer />
